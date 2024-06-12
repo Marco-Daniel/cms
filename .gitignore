@@ -1,0 +1,33 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with 'go test -c'
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Compiled Object files, Temp files, and Logs
+*.o
+*.obj
+*.log
+*.trace
+*.vscode-log
+
+# Ignore the output directory
+/bin/
+/pkg/
+
+# Ignore dependency directories
+/vendor/
+/go.sum
+
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+
+# Ignore binary releases
+/release/
