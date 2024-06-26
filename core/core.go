@@ -1,7 +1,7 @@
 package core
 
 import (
-	"cms/config"
+	"cms/db"
 	"cms/routes"
 
 	"github.com/gin-gonic/gin"
@@ -16,7 +16,7 @@ type Server struct {
 }
 
 func CreateServer(cfg Config) (*Server, error) {
-	err := config.ConnectDB(cfg.DBURI)
+	_, err := db.ConnectDB(25, 25, 60)
 	if err != nil {
 		return nil, err
 	}
